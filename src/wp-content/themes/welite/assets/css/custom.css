@@ -1,16 +1,19 @@
-body{background-color:#f7f7f7;background-repeat:repeat;background-position:center center;background-attachment:fixed;background-size:cover;color:#4e4e4e;font-family:Merriweather;font-size:18px;font-weight:300;}
+body{
+	background-image: url(http://bpf-sandbox.bowersad.com/wp-content/themes/welite/assets/images/pattern4.png);
+	background-repeat: repeat;color:#000000;font-family:Alice;font-size:14px;font-weight:400;
+}
 @media (max-device-width: 640px) and (min-device-width: 180px){
 body{
 background-attachment: scroll;background-size: auto;background-repeat: repeat;}
 }
-h1{font-family:Raleway;font-weight:700;color:#222222;}
+h1{font-family:Raleway;font-weight:400;color:#222222;}
 h2{font-family:Raleway;font-weight:700;color:#222222;}
 h3{font-family:Raleway;font-weight:700;color:#222222;}
 h4{font-family:Raleway;font-weight:700;color:#222222;}
 h5{font-family:Raleway;font-weight:700;color:#222222;}
 h6{font-family:Raleway;font-weight:700;color:#222222;}
 @media (min-width: 992px){
-h1{font-size:40px;}
+h1{font-size:32px;}
 h2{font-size:36px;}
 h3{font-size:32px;}
 h4{font-size:28px;}
@@ -26,10 +29,42 @@ h6 > a{color:#222222;}
 #header{background-color:rgba(255,255,255,0.8)}
 .navbar-wrapper > .navbar{background-color:#ffffff}
 #lnk-show-search{color:#222222}
-#header .logo .logo-text,#header .logo .logo-text a{font-family:Raleway;font-weight:700;font-size:72px;color:#222222;text-transform:none;}
-#header.header-fixed .logo .logo-text,#header.header-fixed .logo .logo-text a{font-family:Raleway;font-weight:700;font-size:28px;color:#222222;text-transform:none;}
+#header .logo .logo-text,#header .logo .logo-text a
+{
+	font-family:Pathway Gothic One;font-weight:400;font-size:48px;color:#0b2804;text-transform:none;
+
+}
+#header.header-fixed .logo .logo-text,#header.header-fixed .logo .logo-text a
+{
+	font-family:Pathway Gothic One;font-weight:400;font-size:28px;color:#222222;text-transform:none;
+	text-align: right;
+}
+#header .logo .tagline-text, #header .logo .tagline-text a
+{
+	margin-top: 10px;
+	font-size:18px; 
+	text-align: left;	
+}
+#header .logo .social-icon,  #header .logo .social-icon a
+{
+	padding-right: 10px;
+	margin-top: 10px;
+	font-size:28px;
+	text-align: right;	
+}
+
+#header .logo .email-form
+{
+	margin-top: 10px;
+	text-align: right;
+}
+
+
 @media (max-width: 992px){
-#header .logo .logo-text,#header .logo .logo-text a{font-family:Raleway;font-weight:700;font-size:28px;color:#222222;text-transform:none;}
+#header .logo .logo-text,#header .logo .logo-text a
+	{
+		font-family:Pathway Gothic One;font-weight:400;font-size:28px;color:#222222;text-transform:none;
+	}
 }
 #header .logo .logo-image,#header .logo .logo-text{padding-top:4px;padding-bottom:4px;}
 #header.header-fixed .logo .logo-image,#header.header-fixed .logo .logo-text{padding-top:4px;padding-bottom:4px;}

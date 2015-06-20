@@ -11,8 +11,8 @@
 <!-- ## header-ephemera start ## -->
 <div id="header-ephemera">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
+        <div class="row">          
+            <div class="col-sm-9">
                 <?php
                     
                     $posts_array        = inafx_theme_option( 'opt_header_ephemera_posts' );
@@ -86,7 +86,8 @@
                     if( 'grid' == $gallery_format ) {
                         echo '<div id="' . $post_gallery_id . '">';
                         while ($fetch_posts->have_posts()) : $fetch_posts->the_post();
-                            printf( '<a href="%3$s" title="%2$s"><img class="img-responsive" src="%1$s" alt="%2$s" /></a>',
+                            printf( '<a href="%3$s" title="%2$s"><img class="img-responsive" src="%1$s" alt="%2$s" />
+                                     <div class="caption" style="opacity: 0.7; display: block;">%2$s</div></a>',
                                 wp_get_attachment_image_src( get_post_thumbnail_id(), $attachment_size )[0],
                                 get_the_title(),
                                 get_the_permalink()
@@ -143,6 +144,11 @@
                     
                         echo $carousel;
                     }
+                ?>
+            </div>
+            <div class="col-sm-3">
+                <?php 
+                echo do_shortcode("[do_widget id=recent-posts-3]") 
                 ?>
             </div>
         </div>
